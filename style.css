@@ -68,7 +68,7 @@ a { text-decoration: none; color: inherit; }
 .mobilier_text p { margin-bottom: 30px; font-size: clamp(15px, 1.1vw, 18px); line-height: 1.8; opacity: 0.9; color: #fff; }
 
 /* 7. DESPRE NOI & MISSION */
-.about_custom { padding: clamp(40px, 8vw, 100px) 0; background: #020717; }
+.about_custom { padding: clamp(40px, 8vw, 40px) 0; background: #020717; }
 .about_intro_box { max-width: 900px; margin-bottom: 50px; }
 .badge_organic { display: inline-block; padding: 5px 15px; border: 1px solid var(--primary); color: var(--primary); border-radius: 50px; font-size: 12px; font-weight: bold; letter-spacing: 1px; margin-bottom: 15px; }
 .trust_grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
