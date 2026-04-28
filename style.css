@@ -61,7 +61,7 @@ a { text-decoration: none; color: inherit; }
 .des1 .content { position: relative; z-index: 2; max-width: 500px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); padding: 30px; border-radius: 15px; border: 1px solid rgba(255, 255, 255, 0.1); }
 .des1 h2 { font-size: 2.5rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 2px; }
 .des1 p { line-height: 1.6; color: #e0e0e0; }
-.des1 .des2 .cta_wrapper{text-align:left;}
+.mobilier_text .cta_wrapper{text-align:left;}
 .des2 { justify-content: flex-start; }
 .des2::before { background-image: linear-gradient(to left, rgba(0,0,0,0.8), rgba(0,0,0,0.2)), url('img/webp_img/code_2.webp'); }
 .mobilier_text { position: relative; z-index: 2; text-align: left; max-width: 500px; background: rgba(0, 0, 0, 0.2); border-radius: 20px; }
