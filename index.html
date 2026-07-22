@@ -44,7 +44,9 @@
 						<li><a href="servicii.html">SERVICII</a></li>
 						<li><a href="portofoliu.html">PORTOFOLIU</a></li>
 						<li><a href="contacte.html">CONTACTE</a></li>
-						
+						<li class="translate-holder">
+        					<div id="google_translate_element"></div>
+    					</li>
 					</ul>
 					
 					
@@ -203,7 +205,38 @@
 			}
 
 		</script>
+			
 
+		<!-- Script Automatizare Limba - Atelier Of Brand -->
+		<script type="text/javascript">
+		function googleTranslateElementInit() {
+		  new google.translate.TranslateElement({
+		    pageLanguage: 'ro',
+		    includedLanguages: 'ro,en,tr', // Permite doar Română, Engleză și Turcă pentru control total
+		    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+		    autoDisplay: false
+		  }, 'google_translate_element');
+		
+		  // Forțare auto-traducere în funcție de browserul vizitatorului
+		  setTimeout(function() {
+		    var userLang = navigator.language || navigator.userLanguage; 
+		    userLang = userLang.substring(0, 2).toLowerCase(); // Extrage codul de 2 litere (ex: 'tr', 'en')
+		
+		    var googleSelect = document.querySelector('.goog-te-combo');
+		    
+		    if (googleSelect && googleSelect.value === "") {
+		      if (userLang === 'tr') {
+		        googleSelect.value = 'tr';
+		        googleSelect.dispatchEvent(new Event('change'));
+		      } else if (userLang === 'en') {
+		        googleSelect.value = 'en';
+		        googleSelect.dispatchEvent(new Event('change'));
+		      }
+		    }
+		  }, 1200); // Așteaptă încărcarea completă a motorului Google
+		}
+		</script>
+		<script type="text/javascript" src="//://google.com"></script>
 
     </body>
 </html>
